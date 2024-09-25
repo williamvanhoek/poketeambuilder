@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Team Builder</title>
+    <!-- Link to the renamed CSS file -->
+    <link rel="stylesheet" href="pokemonstyle.css">
+    <!-- Import Montserrat font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Pokémon Team Builder</h1>
+        <p>Select three Pokémon to build your team and see their strengths and weaknesses.</p>
+    </header>
+
+    <main>
+        <div class="pokemon-selection">
+            <div class="pokemon-container">
+                <label for="pokemon1">Pokémon 1:</label>
+                <select id="pokemon1" class="pokemon-select"></select>
+                <div class="autocomplete" id="autocomplete1">
+                    <input type="text" id="pokemonCode1" class="pokemon-code" placeholder="Enter Pokédex ID">
+                    <input type="text" id="pokemonSearch1" class="pokemon-search" placeholder="Search Pokémon">
+                    <span></span>
+                </div>
+            </div>
+            <div class="pokemon-container">
+                <label for="pokemon2">Pokémon 2:</label>
+                <select id="pokemon2" class="pokemon-select"></select>
+                <div class="autocomplete" id="autocomplete2">
+                    <input type="text" id="pokemonCode2" class="pokemon-code" placeholder="Enter Pokédex ID">
+                    <input type="text" id="pokemonSearch2" class="pokemon-search" placeholder="Search Pokémon">
+                    <span></span>
+                </div>
+            </div>
+            <div class="pokemon-container">
+                <label for="pokemon3">Pokémon 3:</label>
+                <select id="pokemon3" class="pokemon-select"></select>
+                <div class="autocomplete" id="autocomplete3">
+                    <input type="text" id="pokemonCode3" class="pokemon-code" placeholder="Enter Pokédex ID">
+                    <input type="text" id="pokemonSearch3" class="pokemon-search" placeholder="Search Pokémon">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="results">
+            <h2>Team Analysis</h2>
+            <div class="results-content">
+                <div id="strengths">
+                    <h3>Strengths:</h3>
+                    <ul></ul>
+                    <p id="critical-strength-count">Critical Strengths: 0</p>
+                </div>
+                <div id="weaknesses">
+                    <h3>Weaknesses:</h3>
+                    <ul></ul>
+                    <p id="critical-weakness-count">Critical Weaknesses: 0</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Link to the JavaScript file -->
+    <script src="pokemonscript.js"></script>
+</body>
+</html>
